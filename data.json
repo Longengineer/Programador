@@ -1,0 +1,75 @@
+[
+  {
+    "nome": "HTML",
+    "foto": "Card1.png",
+    "descricao": "É a base do site, o esqueleto que mantém tudo estruturado",
+    "data_criacao": "1991",
+    "link_oficial": "https://html.spec.whatwg.org/multipage/ target=\"_blank\"",
+    "tags": [
+      "markup",
+      "web",
+      "estrutura"
+    ]
+  },
+  {
+    "nome": "CSS",
+    "foto": "Card2.png",
+    "descricao": "Define o estilo visual do site, como cores, fontes e layout",
+    "data_criacao": "1996",
+    "link_oficial": "https://www.w3.org/Style/CSS/Overview.en.html target=\"_blank\"",
+    "tags": [
+      "estilo",
+      "web",
+      "design"
+    ]
+  },
+  {
+    "nome": "JavaScript",
+    "foto": "Card3.png",
+    "descricao": "Linguagem de programação que permite interatividade e dinamismo nas páginas",
+    "mago": true,
+    "data_criacao": "1995",
+    "link_oficial": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript target=\"_blank\"",
+    "tags": [
+      "logica",
+      "web",
+      "script"
+    ]
+  },
+  {
+    "nome": "UI e UX",
+    "foto": "Card4.png",
+    "descricao": "Interface do Usuário: foca na aparência e disposição visual dos elementos e Experiência do Usuário: foca em como o usuário se sente ao usar o sistema",
+    "data_criacao": "1960",
+    "link_oficial": "https://en.wikipedia.org/wiki/User_interface target=\"_blank\"",
+    "tags": [
+      "design",
+      "interface",
+      "visual"
+    ]
+  },
+  {
+    "nome": "Python",
+    "foto": "Card5.png",
+    "descricao": "Linguagem versátil e legível, usada em backend e ciência de dados",
+    "data_criacao": "1991",
+    "link_oficial": "https://www.python.org/ target=\"_blank\"",
+    "tags": [
+      "backend",
+      "dados",
+      "logica"
+    ]
+  },
+  {
+    "nome": "React",
+    "foto": "Card6.png",
+    "descricao": "Biblioteca JavaScript popular para construção de interfaces de usuário",
+    "data_criacao": "2013",
+    "link_oficial": "https://react.dev/ target=\"_blank\"",
+    "tags": [
+      "biblioteca",
+      "javascript",
+      "frontend"
+    ]
+  }
+]

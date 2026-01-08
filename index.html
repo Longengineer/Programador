@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Programador</title>
+</head>
+<body>
+
+  <div class="container">
+  <template id="template-mago">
+    <div class="scene">
+        <div class="objects">
+            <div class="square"></div>
+            <div class="circle"></div>
+            <div class="triangle"></div>
+        </div>
+        <div class="wizard">
+            <div class="body"></div>
+            <div class="right-arm">
+                <div class="right-hand"></div>
+            </div>
+            <div class="left-arm">
+                <div class="left-hand"></div>
+            </div>
+            <div class="head">
+                <div class="beard"></div>
+                <div class="face">
+                    <div class="adds"></div>
+                </div>
+                <div class="hat">
+                    <div class="hat-of-the-hat"></div>
+                    <div class="four-point-star --first"></div>
+                    <div class="four-point-star --second"></div>
+                    <div class="four-point-star --third"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+  </template>
+  </div>
+
+     <nav class="navbar">
+    <ul>
+      <li><a href="#home">Início</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="https://www.instagram.com/pedroiv_u/" target="_blank">Contato</a></li>
+    </ul>
+    </nav>
+
+    <header>
+        <h1>Qual vai ser o programa hoje meu nobre?</h1>
+        <div>
+            <input type="text" placeholder="Faça qualquer pergunta">
+            <button id="botao-busca" onclick="mostrarVideo()">Buscar</button>
+        </div>
+    </header>
+
+    <video id="meuVideo" width="400" controls>
+    <source src="voceeburro.mp4" type="video/mp4">
+    </video>
+
+    <main>
+         <div id="resultados-pesquisa" class="resultados-container"></div>
+         <div class="buttons">
+            <button onclick="anterior()">Anterior</button>
+            <button onclick="proximo()">Próximo</button>
+         </div>
+
+    </main>
+
+
+
+
+    <footer>
+    <footer class="footer">
+        <ul class="footer-links">
+            <li>
+                <a href="https://github.com/Longengineer" target="_blank">GitHub</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/pedro-ivo-souto-junior-930aa0203/" target="_blank">Linkedin</a>
+            </li>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
