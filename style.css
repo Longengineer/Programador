@@ -15,10 +15,11 @@
    
     .card {
     display: none; 
-    width: 300px; 
+    width: 100%;
+    max-width: 300px; 
     height: auto; 
-    max-height: 450px; 
-    overflow-y: auto;
+    max-height: none; 
+    overflow: visible;
     border-radius: 8px;
     margin: 0;
     padding: 0;
@@ -34,8 +35,9 @@
   }
 
   .card-visual {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 1 / 1;
     border-radius: 8px;
     background-size: cover;
     background-position: center;
@@ -102,7 +104,7 @@ body  {
     font-family: "Quicksand", sans-serif; /* Define a família da fonte */
     min-height: 100vh; /* Garante que o body ocupe pelo menos a altura total da viewport */
     display: flex; /* Habilita o layout flexbox */
-    flex-direction: column; /* Organiza os elementos em coluna */
+    flex-direction:column; /* Organiza os elementos em coluna */
     margin: 0; /* Remove a margem padrão */
 }
 
@@ -161,6 +163,11 @@ header h1 {
     white-space: nowrap; /* Impede a quebra de linha do texto */
 }
 
+header div {
+    display: flex;
+    align-items: center;
+}
+
 div input {
     padding: 0.375rem 0.75rem; /* Espaçamento interno */
     border-radius: 1rem; /* Arredonda as bordas */
@@ -169,7 +176,8 @@ div input {
     font-family: inherit; /* Herda a família da fonte do elemento pai */
     font-size: 1.5rem; /* Tamanho da fonte */
     transition: all 0.2s ease; /* Adiciona uma transição suave para todas as propriedades */
-    width: 30rem; /* Largura do input */
+    width: 100%; /* Largura do input */
+    max-width: 30rem;
     color: var(--secondary-color); /* Cor do texto digitado */
     margin-right: .5rem; /* Margem à direita */
 }
@@ -344,9 +352,15 @@ article a:hover {
     article:hover { /* Estilos para o article em telas menores */
         transform: none; /* Remove o efeito de escala ao passar o mouse */
     }
+
+    .scene {
+        transform: scale(0.8);
+        justify-content: center;
+    }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px) 
+{
     header h1 { /* Estilos para o h1 em telas com largura máxima de 480px */
         font-size: 1rem; /* Reduz ainda mais o tamanho da fonte */
         max-width: 70%; /* Define uma largura máxima */
@@ -362,7 +376,7 @@ article a:hover {
         font-size: 1.3rem; /* Reduz o tamanho da fonte */
     }
 
-    div { /* Estilos para a div do cabeçalho em telas muito pequenas */
+    header div { /* Estilos para a div do cabeçalho em telas muito pequenas */
         display: flex; /* Habilita flexbox */
         align-items: center; /* Alinha itens ao centro */
         justify-content: center; /* Centraliza itens */
@@ -376,6 +390,12 @@ article a:hover {
 
     button { /* Estilos para o botão em telas muito pequenas */
         margin-top: 1rem; /* Adiciona margem no topo */
+    }
+
+    .scene {
+        transform: scale(0.6);
+        flex-direction: column-reverse;
+        justify-content: center;
     }
 }
 
